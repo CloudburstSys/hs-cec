@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cec-controller": "^1.4.0",
+    "express": "^4.21.2"
+  }
+}
