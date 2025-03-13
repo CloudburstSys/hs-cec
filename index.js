@@ -26,6 +26,7 @@ app.post("/", async (req, res) => {
 
 cecCtl.on('ready', (ctrl) => {
     controller = ctrl;
+    console.log("worky!");
     app.listen(8000);
 });
 cecCtl.on('error', console.error);
