@@ -7,7 +7,7 @@ let controller = null;
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-    res.status(200).send(controller.dev0.powerStatus === "on");
+    res.status(200).json({ state: controller.dev0.powerStatus === "on" });
 });
 
 app.post("/", async (req, res) => {
